@@ -1,0 +1,125 @@
+/* ---------- GLOBAL ---------- */
+body {
+  zoom: 0.9;
+  background-image: url("../images/contenent/Fondos/fondo.webp");
+  background-size: cover; /* hace que la imagen cubra toda la pantalla */
+  background-repeat: no-repeat; /* evita que se repita */
+  background-attachment: fixed; /* mantiene la imagen fija al hacer scroll */
+  font-family: Arial;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+img {
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 200%;
+}
+
+/* ---------- TEXTOS ---------- */
+h1 {
+  font-family: "Times New Roman";
+  font-size: 50px;
+  color: rgb(52, 86, 87);
+  border: 10px solid rgb(52, 86, 87);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+h2 {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.Normal-text {
+  color: midnightblue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+/* ---------- LINKS ---------- */
+.link {
+  color: blue;
+}
+
+.link:hover {
+  color: rgb(0, 166, 255);
+}
+
+/* ---------- SECCIONES CON IMAGEN ---------- */
+.text-w-image {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.text-w-image > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.text-w-image figure {
+  margin: 0;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.text-w-image img {
+  max-width: 100%;
+  width: 350px;
+  border-radius: 25px;
+}
+
+.Image-Button {
+  margin: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 15px;
+    border-width: 5px;
+  }
+
+  h2 {
+    padding: 15px;
+  }
+
+  .Normal-text {
+    padding: 15px;
+  }
+
+  .text-w-image {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .text-w-image > div,
+  .text-w-image figure {
+    min-width: 100%;
+  }
+}
