@@ -1,0 +1,42 @@
+ ASUS CX1100CNA/C223NA headless con placa BABYMEGA
+
+ Intel Apollo Lake
+
+BIOS: SPI Flash Winbond W25Q64FW o W25Q64JW 
+
+Especificaciones: 
+
+
+CUIDADO1: el chip TPM es un hincha huevos
+CUIDADO2: Si el chip TPM detecta un cambio de BIOS. La pc se vuelve un brick
+CUIDADO3: Si esta el TPM ORIGINAL con el que vino la chrome de fabrica... se vuelve un brick. . . . . . . . . . Nota: este se activa una vez se enciende la computadora
+CUIDADO4: Además todo se debe hacer SIN BATERIA PUESTA...
+CUIDADO5: La firma digital se emitirá a los servidores después de conectarse a internet y cancela todo el plan, hasta te pone en peligro (legal)
+CUIDADO6: 
+
+
+Recuerda1: estas cambiando la BIOS por medio de hardware, eso significa que no se volverá brick por protección de software
+Recuerda2: La placa Babymega es de 1.8V ten cuidado con eso, al momento de usar un programador (CH341A_FLASH de preferencia) usa los adaptadores requeridos
+Recuerda3: 
+
+
+
+VULNERABILIDAD ⚠️: Mientras no estés conectado a internet, la firma digital aun no se emite a los servidores 
+
+PERO: Ten cuidado porque sigue ahi la firma digital, así que alejarse de toda conexión a internet hasta que no haya Chrome OS
+
+ENTONCES EL OBJETIVO ES: Sacar Chrome Os sin conexión a internet, a la fuerza
+
+
+
+fase 1: evadir la seguridad
+
+Paso1: Formatear la Chromebook.
+Paso2: Arreglar el otro puerto USB para poder trabajar sin batería y usar el HDMI a la vez.
+Paso3: Desconectar la batería, sacarla por completo.
+Paso4: PASO DE PRECAUCION sacar la BIOS de la placa. 
+
+fase 2: Firmware alternativo
+
+Paso5: Buscar en MrChromebox el binario UEFI (Full ROM) específico para Intel Apollo Lake y descargarlo.
+Paso6: 

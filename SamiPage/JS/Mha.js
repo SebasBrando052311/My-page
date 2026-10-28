@@ -5,7 +5,7 @@ const ocs = [
     id: "01",
     nombre: "Kyrin 🦇",
     categoria: "mha",
-    imagen: "../images/Sami/MhaOcs/KyrinSinMaquillar.webp",
+    imagen: "../SamiImages/MhaOcs/KyrinSinMaquillar.webp",
 
     genero: "Masculino",
     nacionalidad: "Japones",
@@ -29,7 +29,7 @@ const ocs = [
     id: "02",
     nombre: "Hunter 🦁",
     categoria: "mha",
-    imagen: "../images/Sami/MhaOcs/Hunter.webp",
+    imagen: "../SamiImages/MhaOcs/Hunter.webp",
 
     genero: "Masculino",
     nacionalidad: "Mexicano",
@@ -53,7 +53,7 @@ const ocs = [
     id: "02",
     nombre: "Saki ☀️",
     categoria: "mha",
-    imagen: "../images/Sami/MhaOcs/Saki.webp",
+    imagen: "../SamiImages/MhaOcs/Saki.webp",
 
     genero: "Femenino",
     nacionalidad: "Brasileña",
@@ -204,7 +204,7 @@ function createOcCard(oc) {
   content.append(details, toggleButton);
   card.append(image, content);
   return card;
-} 
+}
 
 // Repetimos el proceso para cada personaje de la lista.
 ocs.forEach((oc) => main.append(createOcCard(oc)));
