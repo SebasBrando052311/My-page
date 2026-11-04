@@ -36,7 +36,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-.Normal-text {
+p,
+ul,
+ol {
   color: midnightblue;
   padding: 20px;
   border-radius: 10px;
@@ -94,8 +96,66 @@ h2 {
   border-radius: 25px;
 }
 
+.top-gifs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: clamp(12px, 8vw, 100px);
+  width: 100%;
+}
+
+.top-gifs img {
+  display: block;
+  flex: 0 1 150px;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.top-gifs .top-gif-center {
+  flex-basis: 250px;
+}
+
 .Image-Button {
   margin: 10px;
+}
+
+/* ---------- DESKTOP SIDE GIFS ---------- */
+/* Uso en HTML: crea un div con desktop-gif-rail y agrega un img por cada GIF.
+   Añade desktop-gif-rail--left o desktop-gif-rail--right para elegir el lado.
+   Solo se muestran desde 1200px; cambia ese valor si quieres otro ancho mínimo. */
+.desktop-gif-rail {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .desktop-gif-rail {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100px;
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: translateY(-50%);
+  }
+
+  .desktop-gif-rail--left {
+    left: calc(50% - 588px);
+  }
+
+  .desktop-gif-rail--right {
+    right: calc(50% - 588px);
+  }
+
+  .desktop-gif-rail img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* ---------- FOOTER ---------- */
@@ -106,6 +166,8 @@ footer {
   margin-bottom: 20px;
   margin-top: 40px;
 }
+
+
 
 /* ---------- MOBILE RESPONSIVE ---------- */
 @media (max-width: 600px) {
@@ -123,13 +185,19 @@ footer {
     padding: 15px;
   }
 
-  .Normal-text {
+  p,
+  ul,
+  ol {
     padding: 15px;
   }
 
   .text-w-image {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .top-gifs {
+    gap: 12px;
   }
 
   .text-w-image > div,
