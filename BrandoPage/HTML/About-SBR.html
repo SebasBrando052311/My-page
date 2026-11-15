@@ -21,6 +21,20 @@
       body {
         background-image: url("../BrandoImages/BrandoContenent/Fondos/FondoSBR.webp");
       }
+
+      #Espiral {
+        display: block;
+        width: min(100%, 900px);
+        height: auto;
+        box-sizing: border-box;
+        margin: 3rem auto;
+        border: 2px solid #d6ad55;
+        border-radius: 18px;
+        background: radial-gradient(circle at center, #263750, #111a2b 72%);
+        box-shadow:
+          0 16px 40px rgba(5, 10, 22, 0.55),
+          0 0 22px rgba(214, 173, 85, 0.2);
+      }
     </style>
   </head>
   <a href="../../index.html">
@@ -159,12 +173,45 @@
       </div>
     </div>
 
+    <div class="canvas-container">
+      <button id="start-spiral" type="button" class="download-button">
+        Mostrar espiral
+      </button>
+      <canvas id="Espiral" width="900" height="500"> </canvas>
+      <p>
+        pongamonos bien frikis y hagamos una espiral aurea de a pura matematica
+        dura jeje.... SOLO POR AMOR A GYRO ZEPPELLI
+        <br />
+        ¡¡puedes encontrar el codigo en mi
+        <a href="https://github.com/SebasBrando052311/My-page">repositorio</a>
+        de esta pagina!! en BrandoPage/Others/Espiral Aurea encontraras este
+        codigo
+        <br />
+        <br />
+        ¿quieres detalles nerds y aburridos sobre esta espiral? pues los puedes
+        encontrar en mi
+        <a href="https://sebastian052311.github.io/Drawing/">
+          aburrida y mas profesional pagina</a
+        >
+        que tengo subida en mi otra cuenta de github asi como otras varias cosas
+        matematicas que haga
+      </p>
+    </div>
+
+    <script src="../Others/Espiral aurea.js"></script>
+
     <div
-      style="display: flex; justify-content: center; gap: 100px; width: 100%"
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        width: 100%;
+        margin-top: 100px;
+      "
     >
       <img
         src="../../Gifs/dri-construction1.gif"
-        alt="Boochi crying"
+        alt="page under construction"
         style="
           width: 250px;
           height: 250px;
@@ -174,7 +221,7 @@
       />
       <img
         src="../../GeneralContent/PageUnderConstruction.webp"
-        alt="Fire orb"
+        alt="Page under construction"
         style="width: 250px; height: 250px; object-fit: contain"
       />
     </div>
