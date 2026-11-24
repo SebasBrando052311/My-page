@@ -20,132 +20,274 @@
       body {
         background-image: url("../BrandoImages/BrandoContenent/Fondos/Infernum.webp");
       }
+
+      .explanation-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .explanation-grid figure {
+        margin: 0;
+        text-align: center;
+      }
+
+      .explanation-grid img {
+        height: 220px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      @media (max-width: 600px) {
+        .explanation-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
 
-  <header>
-    <a href="../../index.html">
-      <h1 style="margin-bottom: 75px">Pagina de Brando</h1></a
-    >
+  <body>
+    <header>
+      <a href="../../index.html">
+        <h1 style="margin-bottom: 75px">Pagina de Brando</h1>
+      </a>
 
-    <div class="top-gifs">
-      <img src="../../Gifs/CryingBOCH.gif" alt="Boochi crying" />
-      <img class="top-gif-center" src="../../Gifs/FireOrb.gif" alt="Fire orb" />
-      <img src="../../Gifs/PanikBOCH.gif" alt="Boochi in panik" />
-    </div>
-
-    <p>
-      Antes que nada dar sus merecidos creditos a Ega por esos hermosos
-      <a href="https://ko-fi.com/s/76e7175550">gifs de boochi</a> ahi arriba
-    </p>
-  </header>
-
-  <section class="text-w-image">
-    <div>
-      <h2>Mi Odisea</h2>
-
-      <p>Entonces... Linux!.</p>
+      <div class="top-gifs">
+        <img src="../../Gifs/CryingBOCH.gif" alt="Boochi llorando" />
+        <img
+          class="top-gif-center"
+          src="../../Gifs/FireOrb.gif"
+          alt="Esfera de fuego"
+        />
+        <img src="../../Gifs/PanikBOCH.gif" alt="Boochi en panico" />
+      </div>
 
       <p>
-        Hablemos de linux, o mejor dicho de la genuina odisea de meter linux a
-        una Crhomebook administrada por una escuela con
-        <strong>una pantalla rota</strong> y uno de sus puertos usb no funciona
-        donde cabe resaltar no tenia ninguna experiencia en "reparar
-        computadoras" o como diria alguien normal "hackear"
+        Antes que nada dar sus merecidos creditos a Ega por esos hermosos
+        <a href="https://ko-fi.com/s/76e7175550">gifs de boochi</a> ahi arriba
       </p>
-    </div>
+    </header>
 
-    <figure>
+    <main>
+      <section class="text-w-image">
+        <div>
+          <h2>Mi Odisea</h2>
+
+          <p>Entonces... Hackear computadoras!.</p>
+
+          <p>
+            Es algo que desde que era un niño soñaba con hacer, la verdad que ni
+            si quiera creo que sea el termino preciso; de hecho creo que el
+            mejor termino seria "liberar", pero la palabra "hackear" llama mas
+            la atencion ¿no?.
+            <br />
+            ya que llame un poquito tu atencion hablemos de la
+            <strong>AGONIA</strong> que pase intentando liberar una computadora
+            vieja que usaba en la secundaria
+          </p>
+        </div>
+
+        <figure>
+          <img
+            src="../BrandoImages/BrandoContenent/broken_screen.webp"
+            alt="Pantalla rota"
+            width="500"
+          />
+        </figure>
+      </section>
+
+      <section>
+        <h2>La grieta en la muralla</h2>
+
+        <p>
+          Para penetrar las defensas del enemigo no debes enfocarte en buscar
+          una grieta en la muralla, o en otras palabras, busca lo debil, no te
+          enfoques en lo fuerte, busca lo debil y ataca
+          <br />
+          <br />¿Cual es el punto debil en este caso?
+
+          <br /><br />
+          Bueeeeeeeeeeeeeeeeno, hubiera sido hermoso sentarme aqui como un
+          ganador a poder decirte que logre liberar esta computadora (aun si
+          tecnicamente saltarme de esa manera los terminos de administacion y
+          uso de una empresa/institucion era ilegal) pero lamentablemente no soy
+          el heroe que me gustaria decirte que soy, esta es la historia de un
+          perdedor, que tal y como el gallo.
+          <em
+            >teniendo las patas en la mierda, el gallo
+            <strong>CANTA.</strong></em
+          >
+          —eso sí, no canta con mucha fuerza en este caso— ya que aun si estoy
+          orgulloso no se si te estare dando informacion correcta xD (ya que me
+          cometi un error antes de poder terminar mi diseño magico). Asi que
+          aqui tienes mis notas por si decides continuar lo que empeze:
+        </p>
+        <a
+          class="download-button"
+          href="../Others/ImfoDeLaChrome.txt"
+          download="Info de mi Chrome.txt"
+        >
+          Descargar Info de la Chrome
+        </a>
+      </section>
+
+      <section id="explicacion">
+        <h2>Explicacion</h2>
+        <p>
+          ok, si es que leiste mis apunntes es muy probable que sigas
+          confundido. Deja te explico con mas calma por este medio a que me
+          refiero en cada apartado, empezando con:
+        </p>
+
+        <div class="explanation-grid">
+          <article>
+            <h3>Primera informacion</h3>
+            <p>
+              Obviamente cada computadora/Crhomebook tendra una seguridad y
+              sistemas distintos, asi que ahi estan las epecificaciones exactas
+              de la crhome sobre la cual se investigo para esto
+            </p>
+            <figure>
+              <img
+                src="../../Gifs/wizard.gif"
+                alt="Notas sobre la investigacion"
+              />
+            </figure>
+          </article>
+
+          <article>
+            <h3>Cuidado</h3>
+            <p>
+              Las advirtencias no tienen orden, todas son peligros que hay que
+              tener en cuenta a la vez hasta que sean deshabilitadas, claramente
+              cabe resaltar, estas son las advirtencias que debes tener el
+              cuenta
+            </p>
+            <figure>
+              <img src="../../Gifs/warning.gif" alt="Componentes del equipo" />
+            </figure>
+          </article>
+
+          <article>
+            <h3>Recuerda</h3>
+            <p>
+              Son cosas que uve que tener en cuenta al buscar que cuidados debia
+              tener, cuales no, e inclusive el como se hara para lidiar con un
+              "cuidado"
+            </p>
+            <figure>
+              <img
+                src="../../Gifs/Recuerda.gif"
+                alt="Pantalla rota que hay que recordar"
+              />
+            </figure>
+          </article>
+
+          <article>
+            <h3>VULNERABILIDAD</h3>
+            <p>
+              Es una experiencia que recomiendo totalmente pasar por este tipo
+              de cosas justamente por el momento en el que caes en cuenta de
+              esto, de la solucion magica, de tu hipotesis de como ser capaz de
+              alcanzar tu objetivo, el sentimiento es euforico
+            </p>
+            <figure>
+              <img
+                src="../../Gifs/Trashcan.gif"
+                alt="Bote de basura en llamas"
+              />
+            </figure>
+          </article>
+
+          <article>
+            <h3>Fase 1</h3>
+            <p>
+              En la fase 1 lo primero es preparar el terreno, hacer las
+              reparaciones <strong>vitales</strong> que debas de hacerle a tu
+              maquina y hacer las modificaciones que necesites hacer para saltar
+              la seguridad contra modificacion de hardware y/o sofware de la
+              maquina
+            </p>
+            <figure>
+              <img
+                src="../../Gifs/1.gif"
+                alt="1"
+                style="background-color: aliceblue"
+              />
+            </figure>
+          </article>
+
+          <article>
+            <h3>Fase 2</h3>
+            <p>
+              identifica el modelo especifico de Chip SPI Flash de la placa
+              madre de tu computadora -- si no usas el correcto vales madres --
+            </p>
+            <figure>
+              <img
+                src="../../Gifs/2.gif"
+                alt="2"
+                style="background-color: aliceblue"
+              />
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="text-w-image">
+        <figure>
+          <img src="../../Gifs/EvilFireElf.gif" alt="Elfo de fuego maligno" />
+        </figure>
+
+        <div>
+          <p>
+            "¿y que tanto es dificil? ¿no es solo meter un par de comandos en el
+            modo desarrollador? ¡¡Y BUM!! ya tienes linux ¿no?"
+          </p>
+
+          <audio controls>
+            <source src="../Audios/Risa_maniacota.wav" />
+            Tu navegador no soporta la reproduccion de audio.
+          </audio>
+
+          <p>
+            No... el modo dev estaba bloqueado por las politicas de
+            administacion de empresa de mi vieja secu....
+            <br /><br />
+            <strong
+              >LO CUAL POR CIERTO ES ESTUPIDO PORQUE LA COMPUTADORA ERA DE MI
+              PROPIEDAD</strong
+            >
+            <br /><br />
+            A ESO SUMALE LA PANTALLA ROTA... es que creo que no dimencionan la
+            magnitud de esto... porque lo que pasa es que la Crhomebook de por
+            si no tiene puerto HDMI y el modo de restauracion no (suele)
+            mostrarse en la pantalla HDMI cuando la conectas con un adaptador,
+            ademas las Crhomebook suelen tener una proteccion en contra de ser
+            modificadas ubicadas en no me acuerdo que de la bateria que detecta
+            cambios repentinos de voltaje y en el chip TPM que esta hecho para
+            basicamente ser un policia lo que lo hace que practicamente hablando
+            debas matar la computadora (primera vez que debes matar la
+            computadora, te reto a contarlo) desconectando la bateria y que solo
+            pueda funcionar al conectarse a la corriente y a eso sumale que
+            ademas necesitas una pantalla HDMI (en mi caso, que si tu compu esta
+            buena no lo necesitas, cojones) lo cual necesita un adaptador pero
+            no puedes conectar el adaptador y conectar a la corriente la
+            Crhomebook al mismo tiempo entonces terminas invirtiendo demasiado
+            mas en adaptadores que en todos los demas materiales...
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="gif-footer">
       <img
-        src="../BrandoImages/BrandoContenent/broken_screen.webp"
-        alt="imagen de una pantalla rota"
-        width="500"
+        src="../../Gifs/UnderConstruction.gif"
+        alt="Pagina en construccion"
+        width="900"
       />
-    </figure>
-  </section>
-
-  <section class="text-w-image">
-    <img src="../../Gifs/EvilFireElf.gif" alt="" />
-
-    <div>
-      <p>
-        "¿y que tanto es dificil? ¿no es solo meter un par de comandos en el
-        modo desarrollador?"
-      </p>
-
-      <audio controls>
-        <source src="../Audios/Risa_maniacota.wav" />
-      </audio>
-
-      <p>
-        No... el modo dev esta bloqueado....
-        <br />
-        <br />
-        A ESO SUMALE LA PANTALLA ROTA... es que creo que no dimencionan la
-        magnitud de esto... porque lo que pasa es que la Crhomebook de por si no
-        tiene puerto HDMI y el modo de restauracion no (suele) mostrarse en la
-        pantalla HDMI cuando la conectas con un adaptador, ademas las Crhomebook
-        suelen tener una proteccion en contra de ser modificadas ubicadas en no
-        me acuerdo que de la bateria que detecta cambios repentinos de voltaje y
-        en el chip TPM que esta hecho para basicamente ser un policia lo que lo
-        hace que practicamente hablando debas matar la computadora (primera vez
-        que debes matar la computadora, te reto a contarlo) desconectando la
-        bateria y que solo pueda funcionar al conectarse a la corriente y a eso
-        sumale que ademas necesitas una pantalla HDMI (en mi caso, que si tu
-        compu esta buena no lo necesitas, cojones) lo cual necesita un adaptador
-        pero no puedes conectar el adaptador y conectar a la corriente la
-        Crhomebook al mismo tiempo entonces terminas invirtiendo demasiado mas
-        en adaptadores que en todos los demas materiales...
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>La grieta en la muralla</h2>
-
-    <p>
-      Para penetrar las defensas del enemigo no debes enfocarte en buscar una
-      grieta en la muralla, o en otras palabras, busca lo debil, no te enfoques
-      en lo fuerte, busca lo debil y ataca
-      <br />
-      <br />¿Cual es el punto debil en este caso?
-
-      <br /><br />
-      Bueeeeeeeeeeeeeeeeno, hubiera sido hermoso sentarme aqui como un ganador a
-      poder decirte que logre liberar esta computadora (aun si tecnicamente
-      saltarme de esa manera los terminos de administacion y uso de una
-      empresa/institucion era ilegal) pero lamentablemente no soy el heroe que
-      me gustaria decirte que soy, esta es la historia de un perdedor, que tal y
-      como el gallo.
-      <em>teniendo las patas en la mierda, el gallo <strong>CANTA.</strong></em>
-      —eso sí, no canta con mucha fuerza en este caso— ya que aun si estoy
-      orgulloso no se si te estare dando informacion correcta xD (ya que me
-      cometi un error antes de poder terminar mi diseño magico). Asi que aqui
-      tienes mis notas por si decides continuar lo que empeze:
-    </p>
-    <a
-      class="download-button"
-      href="../Others/ImfoDeLaChrome.txt"
-      download="Info de la Chrome.txt"
-      >Descargar Info de la Chrome</a
-    >
-  </section>
-
-  <section class="text-w-image">
-    <div>
-      <h2>Explicacion</h2>
-      <p>
-        ok, si es que leiste mis apunntes es muy probable que sigas confundido.
-        Deja te explico con mas calma por este medio a que me refiero en cada
-        apartado
-      </p>
-    </div>
-
-    <img src="../../Gifs/Trashcan.gif" alt="Fire trash can because yolo" />
-  </section>
-  <img
-    src="../../Gifs/UnderConstruction.gif"
-    alt="Page under Construction"
-    width="900px"
-  />
+    </footer>
+  </body>
 </html>

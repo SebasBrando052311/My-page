@@ -29,7 +29,8 @@ h1 {
   margin-bottom: 20px;
 }
 
-h2 {
+h2,
+h3 {
   padding: 20px;
   border-radius: 10px;
   background-color: white;
@@ -119,6 +120,14 @@ ol {
 
 .Image-Button {
   margin: 10px;
+}
+
+.gif-footer {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 /* ---------- DESKTOP SIDE GIFS ---------- */
